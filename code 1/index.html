@@ -3,23 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mids</title>
+    <title> CAFEE</title>
 </head>
 <link rel="stylesheet" href="style.css">
         <body>
-            <div class="parent">
-    <div class="container">
-<div class="left pic" >
-    <img src="data:image/jpeg;base64,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" height="100px" width="100px" alt="photo">
-<input type="text" id="hello">
-</div>
-<div class="right pic" >
-    <img src="data:image/jpeg;base64,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" height="100px" width="100px">
-<input type="text" id="hello">
-</div>
-</div>
-<p>meri bs hogai yrr szabist se </p>
-</div>
+          <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-crown"></i>
+                Ayesha's <span>Café</span>
+            </a>
 
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#booking" class="nav-link">Reserve Table</a>
+                <a href="#booking" class="btn btn-primary" style="padding: 0.6rem 1.4rem;">
+                    <i class="fa-solid fa-heart"></i> Book a Table
+                </a>
+            </nav>
+
+            <button class="nav-btn-mobile" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-sparkles"></i> Pure Pastel Magic
+                </div>
+                <h1 class="hero-title">
+                    Sip, Sweeten &
+                    <span>Sparkle Today</span>
+                </h1>
+                <p class="hero-text">
+                    Step into an enchanting pink oasis of handcrafted floral teas, signature strawberry lattes, and fresh artisanal pastries baked with love every morning.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        <i class="fa-solid fa-utensils"></i> Explore Menu
+                    </a>
+                    <a href="#booking" class="btn btn-secondary">
+                        <i class="fa-solid fa-calendar-heart"></i> Reserve a Table
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-img-card">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Cute Pink Cafe Ambiance" class="hero-img">
+                </div>
+                <div class="floating-heart fh-1">
+                    <i class="fa-solid fa-heart"></i> 100% Insta-Worthy
+                </div>
+                <div class="floating-heart fh-2">
+                    <i class="fa-solid fa-mug-hot"></i> Organic Coffee
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-gallery">
+                <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&q=80&w=400" alt="Pink Strawberry Drink" class="about-img">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=400" alt="Fresh Baked Pastry" class="about-img">
+            </div>
+
+            <div class="about-content">
+                <span class="script-sub">Our Soft Story</span>
+                <h2 class="section-title">Where Every Sip Feels Like Magic</h2>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                    Created with a dream of combining Parisian elegance with pastel aesthetic sweetness, Ayesha's Café is your cozy girl sanctuary. We blend specialty fair-trade beans with organic botanical syrups to bring you drinks that look like art and taste like happiness.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-seedling"></i>
+                        <div>
+                            <h4>100% Organic</h4>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Specialty Coffee</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <div>
+                            <h4>Insta-Worthy</h4>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Cute Aesthetic Corners</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <div>
+                            <h4>Fresh Baked</h4>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Daily Homemade Treats</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-couch"></i>
+                        <div>
+                            <h4>Cozy Lounge</h4>
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">Relaxing Girl Vibe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu-section" id="menu">
+        <div class="section-header">
+            <span class="script-sub">Delicious Delights</span>
+            <h2 class="section-title">Our Curated Menu</h2>
+            <p class="section-desc">Indulge in sweet savory bites and signature pink beverages handcrafted for you.</p>
+        </div>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" onclick="filterMenu('all', this)">All Treats</button>
+            <button class="tab-btn" onclick="filterMenu('pink-drinks', this)">Pink Drinks</button>
+            <button class="tab-btn" onclick="filterMenu('pastries', this)">Cute Pastries</button>
+            <button class="tab-btn" onclick="filterMenu('pancakes', this)">Fluffy Pancakes</button>
+            <button class="tab-btn" onclick="filterMenu('teas', this)">Artisanal Teas</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+            <!-- Menu Item 1 -->
+            <div class="menu-card" data-category="pink-drinks">
+                <div class="menu-img-container">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=400" alt="Rose Velvet Latte" class="menu-img">
+                    <span class="badge-tag">Insta Favorite</span>
+                    <button class="favorite-btn" onclick="toggleFavorite(this)"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="menu-body">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Rose Velvet Latte</h3>
+                        <span class="menu-price">$6.50</span>
+                    </div>
+                    <p class="menu-desc">Espresso blended with organic rose water syrup, beetroot dust, and velvety steamed oat milk.</p>
+                    <div class="menu-footer">
+                        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span style="font-size: 0.75rem; font-weight:700; color:var(--rose-gold);">Hot or Iced</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu-card" data-category="pastries">
+                <div class="menu-img-container">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=400" alt="Strawberry Croissant" class="menu-img">
+                    <span class="badge-tag">Bestseller</span>
+                    <button class="favorite-btn" onclick="toggleFavorite(this)"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="menu-body">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Strawberry Cream Croissant</h3>
+                        <span class="menu-price">$5.25</span>
+                    </div>
+                    <p class="menu-desc">Flaky butter croissant filled with fresh vanilla bean mascarpone and organic strawberry slices.</p>
+                    <div class="menu-footer">
+                        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span style="font-size: 0.75rem; font-weight:700; color:var(--rose-gold);">Baked Daily</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu-card" data-category="pancakes">
+                <div class="menu-img-container">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=400" alt="Berry Pancakes" class="menu-img">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="menu-body">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Blush Berry Soufflé Pancakes</h3>
+                        <span class="menu-price">$12.00</span>
+                    </div>
+                    <p class="menu-desc">Ultra-fluffy Japanese style soufflé pancakes topped with edible gold leaf, berries, and maple syrup.</p>
+                    <div class="menu-footer">
+                        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span style="font-size: 0.75rem; font-weight:700; color:var(--rose-gold);">Sweet Favorite</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="menu-card" data-category="teas">
+                <div class="menu-img-container">
+                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=80&w=400" alt="Ceremonial Matcha" class="menu-img">
+                    <span class="badge-tag">Organic</span>
+                    <button class="favorite-btn" onclick="toggleFavorite(this)"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="menu-body">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Lavender Matcha Latte</h3>
+                        <span class="menu-price">$6.00</span>
+                    </div>
+                    <p class="menu-desc">First-harvest Uji matcha whisked with lavender infusion and smooth almond milk.</p>
+                    <div class="menu-footer">
+                        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span style="font-size: 0.75rem; font-weight:700; color:var(--rose-gold);">Healthy Choice</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <span class="script-sub">Aesthetic Moments</span>
+            <h2 class="section-title">The #AyeshasCafe Vibe</h2>
+            <p class="section-desc">Tag us on Instagram & TikTok to be featured in our cozy gallery!</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=400" alt="Cafe Interior">
+                <div class="gallery-overlay"><p><i class="fa-brands fa-instagram"></i> @ayeshas.cafe</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=400" alt="Pretty Toast">
+                <div class="gallery-overlay"><p><i class="fa-brands fa-instagram"></i> @ayeshas.cafe</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&q=80&w=400" alt="Sweet Treat">
+                <div class="gallery-overlay"><p><i class="fa-brands fa-instagram"></i> @ayeshas.cafe</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=400" alt="Coffee Cup">
+                <div class="gallery-overlay"><p><i class="fa-brands fa-instagram"></i> @ayeshas.cafe</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="booking-section" id="booking">
+        <div class="section-header">
+            <span class="script-sub">Join Us For Tea</span>
+            <h2 class="section-title">Book a Table / Party</h2>
+            <p class="section-desc">Planning a birthday tea party or quiet study session? Reserve your spot below.</p>
+        </div>
+
+        <div class="booking-card">
+            <form class="booking-form" id="reservationForm" onsubmit="handleReservation(event)">
+                <div class="form-group">
+                    <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+                    <input type="text" id="name" class="form-control" required placeholder="Ayesha Khan">
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                    <input type="email" id="email" class="form-control" required placeholder="ayesha@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="date"><i class="fa-solid fa-calendar"></i> Date</label>
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time"><i class="fa-solid fa-clock"></i> Time</label>
+                    <select id="time" class="form-control" required>
+                        <option value="">Select Time</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="12:30 PM">12:30 PM</option>
+                        <option value="03:00 PM">03:00 PM</option>
+                        <option value="05:30 PM">05:30 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests"><i class="fa-solid fa-heart"></i> Number of Guests</label>
+                    <select id="guests" class="form-control" required>
+                        <option value="1 Guest">1 Guest (Solo Study)</option>
+                        <option value="2 Guests" selected>2 Guests (Tea Date)</option>
+                        <option value="4 Guests">4 Guests (Girl Gang)</option>
+                        <option value="6+ Guests">6+ Guests (Party)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="special"><i class="fa-solid fa-gift"></i> Special Theme Request</label>
+                    <select id="special" class="form-control">
+                        <option value="Standard Table">Standard Table</option>
+                        <option value="Birthday Decor">Birthday Decoration setup (+Pink Balloons)</option>
+                        <option value="Bridal Shower Setup">Bridal / Hen Party Setup</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 1rem;">
+                        <i class="fa-solid fa-sparkles"></i> Confirm Reservation
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="modal-overlay" id="confirmModal">
+        <div class="modal-card">
+            <div class="modal-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 0.5rem;">Yay! You're Booked!</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                Thank you, <strong id="modalName" style="color: var(--deep-rose);"></strong>! We are preparing a lovely table for you.
+            </p>
+            <div style="background: var(--blush-pink); padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; text-align: left; font-size: 0.85rem;">
+                <p><strong>Date & Time:</strong> <span id="modalDateTime"></span></p>
+                <p><strong>Party Size:</strong> <span id="modalGuests"></span></p>
+            </div>
+            <button class="btn btn-primary" onclick="closeModal()" style="width: 100%; justify-content: center;">See You Soon! 🎀</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-crown"></i>
+                    Ayesha's <span>Café</span>
+                </a>
+                <p class="footer-desc">
+                    Your soft pastel sanctuary for fair-trade coffees, floral teas, and handmade sweet memories.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="social-icon" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Our Atelier</a></li>
+                    <li><a href="#menu">Menu Highlights</a></li>
+                    <li><a href="#gallery">Insta Vibe</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Hours</h4>
+                <div class="footer-info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <p><strong>Mon - Fri:</strong> 8am - 8pm</p>
+                        <p><strong>Sat - Sun:</strong> 9am - 9pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Visit Us</h4>
+                <div class="footer-info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>GHOTKI SINDH </p>
+                </div>
+                <div class="footer-info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+1 (555) 793-3822</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ayesha's Café. All rights reserved. Made with 💖 for sweet moments.</p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        function filterMenu(category, btnElement) {
+            const tabs = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            btnElement.classList.add('active');
+            const cards = document.querySelectorAll('.menu-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        function toggleFavorite(button) {
+            button.classList.toggle('active');
+            const icon = button.querySelector('i');
+            if (button.classList.contains('active')) {
+                icon.style.color = 'var(--deep-rose)';
+            } else {
+                icon.style.color = 'var(--text-muted)';
+            }
+        }
+        function handleReservation(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+
+            document.getElementById('modalName').innerText = name;
+            document.getElementById('modalDateTime').innerText = `${date} at ${time}`;
+            document.getElementById('modalGuests').innerText = guests;
+
+            document.getElementById('confirmModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('confirmModal').classList.remove('active');
+            document.getElementById('reservationForm').reset();
+        }
+    </script>
 </body>
 </html>
